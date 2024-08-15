@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: myredis
+    ports:
+      - "6379:6379"
+    environment:
+      # No authentication setup (username/password)
+      REDIS_PASSWORD: ""
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
+    driver: local

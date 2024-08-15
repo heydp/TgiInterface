@@ -1,0 +1,37 @@
+{
+    "env":"local",
+    "host":"localhost",
+    "port" : "9969",
+    "redisConfig":{
+        "host":"localhost",
+        "port":6379,
+        "username":"",
+        "password":""
+    },
+    "tgiServices":[
+        {
+            "scheme":"http",
+            "host":"localhost",
+            "port":9100,
+            "path":"/text/generate",
+            "token":"signature1",
+            "serviceId":"0"
+        },
+        {
+            "scheme":"http",
+            "host":"localhost",
+            "port":9200,
+            "path":"/text/generate",
+            "token":"signature2",
+            "serviceId":"1"
+        },
+        {
+            "scheme":"http",
+            "host":"localhost",
+            "port":9300,
+            "path":"/text/generate",
+            "token":"signature3",
+            "serviceId":"2"
+        }
+    ]
+}
