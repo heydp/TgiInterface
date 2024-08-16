@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "3a8c65a9-b252-4ae5-87b6-829b9b98992d",
+		"name": "TGI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21535833"
+	},
+	"item": [
+		{
+			"name": "server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9969/app/text/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9969",
+					"path": [
+						"app",
+						"text",
+						"generate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "server",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9969/app/text/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9969",
+							"path": [
+								"app",
+								"text",
+								"generate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Request_id",
+							"value": "Diptimans-MacBook-Pro-2.local/agOZvX4L8U-000002"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Aug 2024 17:20:52 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\"result\":\"Welcome to the text generator one. \"}\n{\"result\":\" Text generator one APIs are powerful tools that enhance productivity, creativity, and efficiency across various domains. \"}\n{\"result\":\" They enable businesses, developers, educators, and creatives to automate tasks, generate personalized content, and provide instant responses, all while saving time and resources. \"}\n{\"result\":\" As AI continues to advance, the demand for text generator APIs is likely to grow, driving further innovation and integration into everyday applications.\"}\n"
+				}
+			]
+		},
+		{
+			"name": "tgi1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9100/text/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9100",
+					"path": [
+						"text",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tgi2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9200/text/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"text",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tgi3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9300/text/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9300",
+					"path": [
+						"text",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "server health check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9969/app/text/health/check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9969",
+					"path": [
+						"app",
+						"text",
+						"health",
+						"check"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "server health check",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9969/app/text/health/check",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9969",
+							"path": [
+								"app",
+								"text",
+								"health",
+								"check"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Request_id",
+							"value": "Diptimans-MacBook-Pro-2.local/WwIvZyyvAj-000001"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Aug 2024 15:08:06 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						}
+					],
+					"cookie": [],
+					"body": "\"Health check for all the inference providers in progress\""
+				}
+			]
+		}
+	]
+}
